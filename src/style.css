@@ -1,0 +1,93 @@
+/* SquareUp / Digital Agency Dark Theme Design System */
+:root {
+  --font-main: 'Plus Jakarta Sans', 'Barlow', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Color Tokens matching screenshot */
+  --color-bg-primary: #121212;
+  --color-bg-secondary: #242424;
+  --color-bg-tertiary: #191919;
+  --color-bg-hover: #262626;
+  
+  --color-border-subtle: #262626;
+  --color-border-strong: #333333;
+  --color-border-light: rgba(255, 255, 255, 0.12);
+
+  --color-primary: #FFFFFF;
+  --color-secondary: #E6E6E6;
+  --color-muted: #98989A;
+  --color-placeholder: #656567;
+  
+  /* Signature SquareUp Lime Accent */
+  --color-accent-primary: #9EFF00;
+  --color-accent-hover: #ACFF24;
+  --color-accent-secondary: #D8FF99;
+  --color-dark-btn: #1A1A1A;
+
+  /* Header tokens */
+  --header-height: 84px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-main);
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  background-color: var(--color-bg-primary);
+  color: var(--color-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-bg-primary);
+  color: var(--color-primary);
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border-strong);
+}
+
+/* Base Link & Button styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
